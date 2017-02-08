@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Clase1;
+package practica0;
 
 /**
  *
- * @author zciez
+ * @author L1pc
  */
-public class main {
+public class Alumno {
     
 }
