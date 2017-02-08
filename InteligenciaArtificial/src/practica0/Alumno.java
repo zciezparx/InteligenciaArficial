@@ -57,8 +57,7 @@ public class Alumno {
         System.out.println("DNI: "+ dni);
         System.out.println("Correo: "+ correo); //no se ha subido xD espera
            
-       //al empezar la clase lo he subido y ha funcionado
-       
+//ahora sii xD pero no sa borrao el otroswi el alumno1 este, ni idea       
     }
     
     static Alumno CrearAlumno(){
