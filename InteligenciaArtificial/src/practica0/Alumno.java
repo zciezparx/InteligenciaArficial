@@ -57,7 +57,7 @@ public class Alumno {
         System.out.println("DNI: "+ dni);
         System.out.println("Correo: "+ correo); //no se ha subido xD espera
            
-       //va
+       //al empezar la clase lo he subido y ha funcionado
        
     }
     
