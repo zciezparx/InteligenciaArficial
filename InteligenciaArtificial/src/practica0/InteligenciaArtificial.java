@@ -3,19 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package inteligenciaartificial;
+package practica0;
+
+import java.util.Scanner;
 
 /**
  *
- * @author zciez
+ * @author Fausto Sánchez Muñoz
  */
 public class InteligenciaArtificial {
+    
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Scanner sc = new Scanner(System.in);
+        
+        Alumno pepe = Alumno.CrearAlumno(); // ok, el siguiente igual?
+        pepe.mostrarAlumno(); // no llego a entender esta parte
+        
     }
+    
+    
     
 }
