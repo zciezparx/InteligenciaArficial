@@ -55,7 +55,7 @@ public class Alumno {
     void mostrarAlumno(){
         System.out.println("Nombre: "+ nombre); //por ejemplo voy a subir esto al repositorio
         System.out.println("DNI: "+ dni);
-        System.out.println("Correo: "+ correo);
+        System.out.println("Correo: "+ correo); //no se ha subido xD espera
            
        //va
        
