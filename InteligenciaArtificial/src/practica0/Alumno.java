@@ -53,14 +53,12 @@ public class Alumno {
     }
     
     void mostrarAlumno(){
-        System.out.println("Nombre: "+ nombre); //por ejemplo voy a subir esto al repositorio
+        System.out.println("Nombre: "+ nombre); 
         System.out.println("DNI: "+ dni);
-        System.out.println("Correo: "+ correo); //no se ha subido xD espera
-           
-//ahora sii xD pero no sa borrao el otroswi el alumno1 este, ni idea       
+        System.out.println("Correo: "+ correo); 
     }
     
-    static Alumno CrearAlumno(){
+    static Alumno crearAlumno(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Dime el nombre del alumno ...");
         String nombre = sc.nextLine(); // 
@@ -69,7 +67,6 @@ public class Alumno {
         System.out.println("Dime el Correo del alumno ...");
         String correo = sc.nextLine();
         return new Alumno(nombre, dni, correo );
-        
     }
   
 }

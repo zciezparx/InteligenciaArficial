@@ -17,8 +17,11 @@ public class InteligenciaArtificial {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         
-        Alumno pepe = Alumno.CrearAlumno(); // ok, el siguiente igual?
-        pepe.mostrarAlumno(); // no llego a entender esta parte
+        Alumno pepe = Alumno.crearAlumno();
+        pepe.mostrarAlumno(); 
+        
+        Alumno_IA antonio = new Alumno_IA();
+        antonio.crearNotas();
         
     }
     
