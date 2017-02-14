@@ -5,6 +5,13 @@
  */
 package practica0;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 /**
@@ -27,7 +34,31 @@ public class Alumno_IA extends Alumno{
         }
         notaP=resultado/4;
         System.out.println("La media es" + notaP);
-        
-        
+    }
+    
+    void leerArchivo() throws FileNotFoundException, IOException{
+      String cadena;
+      String cadenaDni="";
+      String ruta = "./pares.txt";
+      File archivo = new File(ruta);
+      BufferedWriter bw = null;
+      bw = new BufferedWriter(new FileWriter(archivo));
+      FileReader f = new FileReader("./datos.txt");
+      BufferedReader b = new BufferedReader(f);
+      while((cadena = b.readLine())!=null) {
+          for (int i = 0; i < cadena.length(); i++) {
+              if(Character.isDigit(cadena.charAt(i))){
+                  dni+=cadena.charAt(i);
+                  if(dni.length()==8 && (Integer.parseInt(dni)%2==0)){
+                        bw.write(cadena + "\r\n");
+                      cadenaDni+=cadena;
+                  }
+              }else{
+                  dni="";
+              }
+          }
+      }
+      bw.close();
+      b.close();
     }
 }
